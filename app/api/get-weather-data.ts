@@ -42,7 +42,7 @@ export async function fetchWeatherData(
     }
 
     const data: WeatherData = await res.json();
-    console.log(data);
+    console.log("the data:", data);
     return data;
   } catch (err) {
     console.error("Error fetching weather data:", err);
